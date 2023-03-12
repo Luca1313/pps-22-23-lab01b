@@ -1,8 +1,8 @@
-package e1.ChessBoard;
+package e1.chessboard;
 
-import e1.Utils.Pair;
-import e1.Piece.Piece;
-import e1.Piece.PieceType;
+import e1.utils.Pair;
+import e1.piece.Piece;
+import e1.piece.PieceType;
 
 import java.util.ArrayList;
 import java.util.List;

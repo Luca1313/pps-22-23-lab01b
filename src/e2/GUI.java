@@ -1,6 +1,6 @@
 package e2;
 
-import e2.Utils.Pair;
+import e2.utils.Pair;
 
 import javax.swing.*;
 import javax.swing.event.MouseInputAdapter;

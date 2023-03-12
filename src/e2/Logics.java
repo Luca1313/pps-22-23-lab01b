@@ -1,6 +1,6 @@
 package e2;
 
-import e2.Utils.Pair;
+import e2.utils.Pair;
 
 public interface Logics {
 

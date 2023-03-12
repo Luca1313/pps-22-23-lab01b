@@ -1,6 +1,6 @@
-package e1.Piece;
+package e1.piece;
 
-import e1.Utils.Pair;
+import e1.utils.Pair;
 
 public class PieceFactoryImpl implements PieceFactory {
 

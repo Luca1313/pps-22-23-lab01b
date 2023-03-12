@@ -1,8 +1,8 @@
-package e2.Grid;
+package e2.grid;
 
-import e2.Cell.Cell;
-import e2.Cell.CellImpl;
-import e2.Utils.Pair;
+import e2.cell.Cell;
+import e2.cell.CellImpl;
+import e2.utils.Pair;
 
 import java.util.HashMap;
 import java.util.Map;

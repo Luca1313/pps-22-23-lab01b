@@ -1,6 +1,6 @@
 package e1;
 
-import e1.Utils.Pair;
+import e1.utils.Pair;
 
 @FunctionalInterface
 public interface MovementStrategy {

@@ -1,4 +1,4 @@
-package e2.Cell;
+package e2.cell;
 
 public class CellImpl implements Cell{
 

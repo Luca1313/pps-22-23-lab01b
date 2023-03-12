@@ -1,4 +1,4 @@
-package e1.Piece;
+package e1.piece;
 
 import e1.MovementStrategy;
 

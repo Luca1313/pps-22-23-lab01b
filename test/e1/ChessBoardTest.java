@@ -1,11 +1,11 @@
 package e1;
 
-import e1.ChessBoard.ChessBoard;
-import e1.ChessBoard.ChessBoardImpl;
-import e1.Piece.Piece;
-import e1.Piece.PieceFactory;
-import e1.Piece.PieceFactoryImpl;
-import e1.Utils.Pair;
+import e1.chessboard.ChessBoard;
+import e1.chessboard.ChessBoardImpl;
+import e1.piece.Piece;
+import e1.piece.PieceFactory;
+import e1.piece.PieceFactoryImpl;
+import e1.utils.Pair;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
