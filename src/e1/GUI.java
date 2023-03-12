@@ -1,5 +1,7 @@
 package e1;
 
+import e1.Utils.Pair;
+
 import javax.swing.*;
 import java.util.*;
 import java.util.Map.Entry;
@@ -9,7 +11,7 @@ import java.awt.event.ActionListener;
 public class GUI extends JFrame {
     
     private static final long serialVersionUID = -6218820567019985015L;
-    private final Map<JButton,Pair<Integer,Integer>> buttons = new HashMap<>();
+    private final Map<JButton, Pair<Integer,Integer>> buttons = new HashMap<>();
     private final Logics logics;
     private final static int SIZE = 5;
     

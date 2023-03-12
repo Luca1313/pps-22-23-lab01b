@@ -1,5 +1,9 @@
 package e2;
 
+import e2.Grid.Grid;
+import e2.Grid.GridImpl;
+import e2.Utils.Pair;
+
 public class LogicsImpl implements Logics {
 
     private final Grid grid;

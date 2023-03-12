@@ -1,5 +1,7 @@
 package e1;
 
+import e1.Utils.Pair;
+
 @FunctionalInterface
 public interface MovementStrategy {
 

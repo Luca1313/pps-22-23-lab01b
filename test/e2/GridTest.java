@@ -1,5 +1,8 @@
 package e2;
 
+import e2.Grid.Grid;
+import e2.Grid.GridImpl;
+import e2.Utils.Pair;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

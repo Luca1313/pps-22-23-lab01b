@@ -1,5 +1,6 @@
 package e1;
 
+import e1.Utils.Pair;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;

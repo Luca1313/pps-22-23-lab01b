@@ -1,5 +1,7 @@
 package e2;
 
+import e2.Cell.Cell;
+import e2.Cell.CellStatus;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

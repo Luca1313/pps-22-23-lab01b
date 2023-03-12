@@ -1,11 +1,12 @@
 package e2;
 
+import e2.Utils.Pair;
+
 import javax.swing.*;
 import javax.swing.event.MouseInputAdapter;
 import javax.swing.event.MouseInputListener;
 
 import java.util.*;
-import java.util.Map.Entry;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -13,7 +14,7 @@ import java.awt.event.MouseEvent;
 public class GUI extends JFrame {
     
     private static final long serialVersionUID = -6218820567019985015L;
-    private final Map<JButton,Pair<Integer,Integer>> buttons = new HashMap<>();
+    private final Map<JButton, Pair<Integer,Integer>> buttons = new HashMap<>();
     private final Logics logics;
     
     public GUI(int size, int bombs) {

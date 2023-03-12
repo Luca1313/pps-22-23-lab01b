@@ -1,5 +1,7 @@
 package e2;
 
+import e2.Utils.Pair;
+
 public interface Logics {
 
     void explore(Pair<Integer, Integer> position);
