@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/luca/Desktop/Luca/Università/Magistrale/Corsi/Paradigmi/Laboratorio/pps-22-23-lab01b/src/e1</OriginalElement>
+  <nodes>
+    <node x="810.5365168539329" y="89.0">e1.Pair</node>
+    <node x="614.75" y="676.0">e1.PieceFactoryImpl</node>
+    <node x="798.4260299625469" y="1346.0">e1.Main</node>
+    <node x="1069.7865168539329" y="-14.0">e1.MovementStrategy</node>
+    <node x="-95.0" y="348.0">e1.ChessBoard</node>
+    <node x="716.7500000000001" y="1153.0">e1.GUI</node>
+    <node x="0.5" y="587.0">e1.ChessBoardImpl</node>
+    <node x="-47.21348314606712" y="134.0">e1.Piece</node>
+    <node x="1164.2865168539329" y="100.0">e1.PieceType</node>
+    <node x="498.75" y="904.0">e1.LogicsImpl</node>
+    <node x="695.5" y="369.0">e1.PieceImpl</node>
+    <node x="294.75" y="403.0">e1.PieceFactory</node>
+    <node x="933.75" y="665.0">e1.Logics</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="e1.LogicsImpl" target="e1.PieceFactoryImpl" relationship="CREATE">
+      <point x="18.0" y="-93.5" />
+      <point x="-142.0" y="37.5" />
+    </edge>
+    <edge source="e1.GUI" target="e1.Logics" relationship="TO_ONE">
+      <point x="157.5" y="-71.5" />
+      <point x="1039.25" y="957.5" />
+      <point x="1038.9260299625469" y="957.5" />
+      <point x="-0.3239700374531367" y="48.5" />
+    </edge>
+    <edge source="e1.GUI" target="e1.LogicsImpl" relationship="CREATE">
+      <point x="14.999970037453181" y="-71.5" />
+      <point x="896.7499700374533" y="997.5" />
+      <point x="105.5" y="-0.0" />
+    </edge>
+    <edge source="e1.GUI" target="e1.Pair" relationship="TO_MANY">
+      <point x="164.99997003745307" y="-0.0" />
+      <point x="1431.787" y="1224.5" />
+      <point x="1431.787" y="71.5" />
+      <point x="788.0" y="71.5" />
+      <point x="788.0" y="182.5" />
+      <point x="-95.99951685393285" y="-0.0" />
+    </edge>
+    <edge source="e1.LogicsImpl" target="e1.Pair" relationship="CREATE">
+      <point x="-0.0" y="93.5" />
+      <point x="604.25" y="1122.0" />
+      <point x="481.25" y="1122.0" />
+      <point x="481.25" y="617.5" />
+      <point x="1000.0" y="617.5" />
+      <point x="93.46348314606712" y="93.5" />
+    </edge>
+    <edge source="e1.PieceFactoryImpl" target="e1.PieceImpl" relationship="CREATE">
+      <point x="74.75" y="-37.5" />
+      <point x="-0.0" y="71.5" />
+    </edge>
+    <edge source="e1.Main" target="e1.GUI" relationship="CREATE">
+      <point x="-0.0" y="-26.5" />
+      <point x="881.4260299625469" y="1321.0" />
+      <point x="881.7500000000001" y="1321.0" />
+      <point x="-0.0" y="71.5" />
+    </edge>
+    <edge source="e1.GUI" target="e1.Pair" relationship="CREATE">
+      <point x="-2.9962546818751434E-5" y="-71.5" />
+      <point x="881.7499700374533" y="1122.0" />
+      <point x="481.25" y="1122.0" />
+      <point x="481.25" y="617.5" />
+      <point x="1000.0" y="617.5" />
+      <point x="93.46348314606712" y="93.5" />
+    </edge>
+    <edge source="e1.PieceImpl" target="e1.Pair" relationship="TO_ONE">
+      <point x="-0.0" y="-71.5" />
+      <point x="839.0" y="293.5" />
+      <point x="788.0" y="293.5" />
+      <point x="788.0" y="182.5" />
+      <point x="-95.99951685393285" y="-0.0" />
+    </edge>
+    <edge source="e1.ChessBoardImpl" target="e1.Piece" relationship="TO_MANY">
+      <point x="109.5" y="126.5" />
+      <point x="290.5" y="878.0" />
+      <point x="-17.0" y="878.0" />
+      <point x="-17.0" y="712.5" />
+      <point x="-112.5" y="712.5" />
+      <point x="-112.5" y="56.5" />
+      <point x="96.287" y="56.5" />
+      <point x="4.831460671255172E-4" y="-48.5" />
+    </edge>
+    <edge source="e1.LogicsImpl" target="e1.Piece" relationship="TO_ONE">
+      <point x="-0.0" y="-93.5" />
+      <point x="604.25" y="878.0" />
+      <point x="-17.0" y="878.0" />
+      <point x="-17.0" y="712.5" />
+      <point x="-112.5" y="712.5" />
+      <point x="-112.5" y="56.5" />
+      <point x="96.287" y="56.5" />
+      <point x="4.831460671255172E-4" y="-48.5" />
+    </edge>
+    <edge source="e1.LogicsImpl" target="e1.PieceFactory" relationship="TO_ONE">
+      <point x="-105.5" y="-15.0" />
+      <point x="444.25" y="982.5" />
+      <point x="-0.0" y="37.5" />
+    </edge>
+    <edge source="e1.PieceFactoryImpl" target="e1.PieceFactory" relationship="REALIZATION">
+      <point x="-74.75" y="-37.5" />
+      <point x="689.5" y="565.0" />
+      <point x="519.0" y="565.0" />
+      <point x="74.75" y="37.5" />
+    </edge>
+    <edge source="e1.LogicsImpl" target="e1.Logics" relationship="REALIZATION">
+      <point x="70.33333333333331" y="-93.5" />
+      <point x="674.5833333333333" y="882.0" />
+      <point x="986.5" y="882.0" />
+      <point x="-52.75" y="48.5" />
+    </edge>
+    <edge source="e1.ChessBoardImpl" target="e1.ChessBoard" relationship="REALIZATION">
+      <point x="0.0" y="-126.5" />
+      <point x="181.0" y="565.0" />
+      <point x="175.75" y="565.0" />
+      <point x="90.25" y="92.5" />
+    </edge>
+    <edge source="e1.LogicsImpl" target="e1.ChessBoardImpl" relationship="CREATE">
+      <point x="-105.5" y="-0.0" />
+      <point x="196.0" y="997.5" />
+      <point x="15.0" y="126.5" />
+    </edge>
+    <edge source="e1.PieceType" target="e1.MovementStrategy" relationship="TO_ONE">
+      <point x="-0.0" y="-82.5" />
+      <point x="-0.0" y="26.5" />
+    </edge>
+    <edge source="e1.LogicsImpl" target="e1.ChessBoard" relationship="TO_ONE">
+      <point x="-105.5" y="15.0" />
+      <point x="-127.5" y="1012.5" />
+      <point x="-127.5" y="440.5" />
+      <point x="-180.5" y="-0.0" />
+    </edge>
+    <edge source="e1.ChessBoardImpl" target="e1.Pair" relationship="CREATE">
+      <point x="-0.0" y="126.5" />
+      <point x="181.0" y="1122.0" />
+      <point x="481.25" y="1122.0" />
+      <point x="481.25" y="617.5" />
+      <point x="1000.0" y="617.5" />
+      <point x="93.46348314606712" y="93.5" />
+    </edge>
+    <edge source="e1.PieceImpl" target="e1.Piece" relationship="REALIZATION">
+      <point x="-71.75" y="-71.5" />
+      <point x="767.25" y="317.0" />
+      <point x="168.03651685393288" y="317.0" />
+      <point x="71.75" y="48.5" />
+    </edge>
+    <edge source="e1.PieceImpl" target="e1.PieceType" relationship="TO_ONE">
+      <point x="143.5" y="-0.0" />
+      <point x="1289.2865168539329" y="440.5" />
+      <point x="-0.0" y="82.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5479011947454188" showDependencies="true" x="589.0536876540097" y="1130.783716855863" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,48 +1,45 @@
 package e1;
 
-import java.util.*;
-
 public class LogicsImpl implements Logics {
-	
-	private final Pair<Integer,Integer> pawn;
-	private Pair<Integer,Integer> knight;
-	private final Random random = new Random();
-	private final int size;
-	 
+
+	private final Piece pawn;
+	private final Piece knight;
+	private final ChessBoard board;
+	private final PieceFactory factory;
+
     public LogicsImpl(int size){
-    	this.size = size;
-        this.pawn = this.randomEmptyPosition();
-        this.knight = this.randomEmptyPosition();	
+		this.board = new ChessBoardImpl(size);
+		this.factory  = new PieceFactoryImpl();
+        this.pawn = this.factory.buildPawn(this.board.getFreePosition());
+        this.board.addPiece(this.pawn);
+        this.knight = this.factory.buildKnight(this.board.getFreePosition());
+        this.board.addPiece(this.knight);
     }
-    
-	private final Pair<Integer,Integer> randomEmptyPosition(){
-    	Pair<Integer,Integer> pos = new Pair<>(this.random.nextInt(size),this.random.nextInt(size));
-    	// the recursive call below prevents clash with an existing pawn
-    	return this.pawn!=null && this.pawn.equals(pos) ? randomEmptyPosition() : pos;
-    }
+
+	public LogicsImpl(int size, Pair<Integer, Integer> pawnPosition, Pair<Integer, Integer> knightPosition){
+		this.board = new ChessBoardImpl(size);
+		this.factory  = new PieceFactoryImpl();
+		this.pawn = this.factory.buildPawn(pawnPosition);
+		this.knight = this.factory.buildKnight(knightPosition);
+		if (!this.board.addPiece(this.pawn) || !this.board.addPiece(this.knight)) {
+			throw new IllegalArgumentException("Invalid position");
+		}
+	}
     
 	@Override
 	public boolean hit(int row, int col) {
-		if (row<0 || col<0 || row >= this.size || col >= this.size) {
-			throw new IndexOutOfBoundsException();
-		}
-		// Below a compact way to express allowed moves for the knight
-		int x = row-this.knight.getX();
-		int y = col-this.knight.getY();
-		if (x!=0 && y!=0 && Math.abs(x)+Math.abs(y)==3) {
-			this.knight = new Pair<>(row,col);
-			return this.pawn.equals(this.knight);
-		}
-		return false;
+    	Pair<Integer, Integer> newPosition = new Pair<>(row, col);
+    	this.board.updatePiece(this.knight, newPosition);
+    	return this.board.allPawnsEaten();
 	}
 
 	@Override
 	public boolean hasKnight(int row, int col) {
-		return this.knight.equals(new Pair<>(row,col));
+		return this.board.hasKnight(new Pair<>(row,col));
 	}
 
 	@Override
 	public boolean hasPawn(int row, int col) {
-		return this.pawn.equals(new Pair<>(row,col));
+		return this.board.hasPawn(new Pair<>(row,col));
 	}
 }
